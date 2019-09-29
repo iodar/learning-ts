@@ -23,3 +23,11 @@ test("should get list of static users", () => {
     };
     expect(users).toStrictEqual(staticUsers);
 });
+
+test("should get info of app", () => {
+    const appInfo = helpers.getAppInfo();
+    const staticAppInfo = {
+        version: "0.0.1"
+    };
+    expect(appInfo).toStrictEqual(staticAppInfo);
+});

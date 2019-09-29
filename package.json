@@ -6,8 +6,9 @@
   "scripts": {
     "clean": "shx rm -rf ./dist/*",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "build": "npm run build-ts",
-    "build-ts": "tsc",
+    "build-ts": "npm run clean && tsc",
     "build-ts:watch": "tsc -w"
   },
   "author": "iodar",
