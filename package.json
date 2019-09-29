@@ -4,13 +4,19 @@
   "description": "simple project with typescript to learn the syntax and project setup",
   "main": "src/index.ts",
   "scripts": {
-    "test": "jest"
+    "clean": "shx rm -rf ./dist/*",
+    "test": "jest",
+    "build": "npm run build-ts",
+    "build-ts": "tsc",
+    "build-ts:watch": "tsc -w"
   },
   "author": "iodar",
   "license": "ISC",
   "dependencies": {
     "@types/jest": "^24.0.18",
     "jest": "^24.9.0",
+    "shx": "^0.3.2",
+    "ts-jest": "^24.1.0",
     "tslint": "^5.20.0",
     "typescript": "^3.6.3"
   }
