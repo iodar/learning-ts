@@ -1,0 +1,17 @@
+{
+  "name": "learning-ts",
+  "version": "0.0.1",
+  "description": "simple project with typescript to learn the syntax and project setup",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "iodar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  }
+}
