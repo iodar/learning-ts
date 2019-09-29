@@ -12,6 +12,9 @@
   },
   "author": "iodar",
   "license": "ISC",
+  "repository": {
+    "url": "git@github.com:iodar/learning-ts.git"
+  },
   "dependencies": {
     "@types/jest": "^24.0.18",
     "jest": "^24.9.0",
