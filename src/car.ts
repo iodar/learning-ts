@@ -1,9 +1,14 @@
 export enum Make {
-    Audi, Marcedes, VW
+    Audi = "Audi",
+    Mercedes = "Mercedes",
+    VW = "Volkswagen"
 }
 
 export enum Model {
-    Kombi, Limousine, SUV, Hatchback
+    Kombi = "Kombi",
+    Limousine = "Limousine",
+    SUV = "SUV",
+    Hatchback = "Hatchback"
 }
 
 interface ICarProperties {
@@ -28,4 +33,8 @@ export class Car implements ICarProperties {
     public getDisplacementPerCylinder(): number {
         return (this.displacement / this.numberOfCylinders);
     }
+}
+
+export function getFullCarData(carProps: ICarProperties) {
+    return `${carProps.carMake} ${carProps.carModel} mit ${carProps.displacement} cm³ und ${carProps.numberOfCylinders} Zylindern`;
 }
